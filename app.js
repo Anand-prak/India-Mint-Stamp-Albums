@@ -1,4 +1,5 @@
-console.log("APP.JS VERSION 2025-09-22 CONTINENT");
+console.log("APP.JS VERSION 2025-12-25 CONTINENT FIXED");
+
 fetch('albums.json')
   .then(response => response.json())
   .then(albums => {
@@ -11,12 +12,12 @@ fetch('albums.json')
 
       card.innerHTML = `
         <h3>${album.name}</h3>
-        <p><strong>Continent:</strong> ${album.continent_country}</p>
+        <p><strong>Continent:</strong> ${album.continent}</p>
         <p><strong>Pages:</strong> ${album.pages}</p>
       `;
 
       card.onclick = () => {
-        window.location.href = `album.html?id=${album.album_id}`;
+        window.location.href = `album.html?id=${album.name}`;
       };
 
       container.appendChild(card);
@@ -31,21 +32,25 @@ function loadAlbum() {
   fetch('albums.json')
     .then(response => response.json())
     .then(albums => {
-      const album = albums.find(a => a.album_id === albumId);
+      const album = albums.find(a => a.name === albumId);
       if (!album) return;
 
       document.getElementById('album-title').innerText = album.name;
       const imgContainer = document.getElementById('images-container');
 
+      // Optional: sort images numerically
+      album.images.sort((a,b) => a.localeCompare(b, undefined, { numeric: true }));
+
       album.images.forEach(filename => {
         const img = document.createElement('img');
-        img.src = `${album.folder}/${filename}`;
+        img.src = `${album.output_path}/${filename}`;
         img.loading = "lazy";
         imgContainer.appendChild(img);
       });
     });
 }
 
+// Only run on album.html
 if (document.getElementById('album-title')) {
   loadAlbum();
 }
