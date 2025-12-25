@@ -1,0 +1,93 @@
+/* ---------- Global ---------- */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  margin: 0;
+  background-color: #f4f6f8;
+  color: #333;
+}
+
+/* ---------- Header ---------- */
+.site-header {
+  background: linear-gradient(135deg, #2c3e50, #34495e);
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.site-header h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+.subtitle {
+  margin-top: 5px;
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+/* ---------- Album Grid ---------- */
+.albums-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+  padding: 30px;
+}
+
+/* ---------- Album Cards ---------- */
+.album-card {
+  background: white;
+  border-radius: 8px;
+  padding: 16px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.album-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+
+.album-card h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.album-card .meta {
+  font-size: 13px;
+  margin: 4px 0;
+  color: #555;
+}
+
+/* ---------- Album Page ---------- */
+.back-link {
+  display: inline-block;
+  margin: 20px;
+  text-decoration: none;
+  color: #2c3e50;
+  font-weight: bold;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+#album-title {
+  text-align: center;
+  margin: 10px 20px 20px;
+}
+
+/* ---------- Album Images ---------- */
+.album-images {
+  padding: 20px;
+}
+
+.album-images img {
+  width: 100%;
+  max-width: 1200px;
+  display: block;
+  margin: 0 auto 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
