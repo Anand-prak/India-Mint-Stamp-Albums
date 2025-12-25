@@ -1,4 +1,4 @@
-console.log("APP.JS VERSION 2025-12-25 DISPLAY NAME FIXED");
+console.log("APP.JS VERSION 2025-12-25 FINAL FIX");
 
 fetch('albums.json')
   .then(response => response.json())
@@ -18,7 +18,8 @@ fetch('albums.json')
       `;
 
       card.onclick = () => {
-        window.location.href = `album.html?id=${album.name}`;
+        // encode the album name to handle special characters
+        window.location.href = `album.html?id=${encodeURIComponent(album.name)}`;
       };
 
       container.appendChild(card);
@@ -34,12 +35,20 @@ function loadAlbum() {
     .then(response => response.json())
     .then(albums => {
       const album = albums.find(a => a.name === albumId);
-      if (!album) return;
+      if (!album) {
+        console.error("Album not found for ID:", albumId);
+        return;
+      }
 
-      document.getElementById('album-title').innerText = `${album.name} - ${album.display_name}`;
+      const titleEl = document.getElementById('album-title');
       const imgContainer = document.getElementById('images-container');
 
-      // Optional: sort images numerically
+      if (!titleEl || !imgContainer) return;
+
+      titleEl.innerText = `${album.name} - ${album.display_name}`;
+      imgContainer.innerHTML = ""; // clear previous images
+
+      // Sort images numerically
       album.images.sort((a,b) => a.localeCompare(b, undefined, { numeric: true }));
 
       album.images.forEach(filename => {
