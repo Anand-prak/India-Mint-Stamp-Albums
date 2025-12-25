@@ -2,8 +2,9 @@
     {
         "name": "AL-116_INDIA_MOUNTED_MINT_1946-1975_VOL-1",
         "folder": "AL-116_INDIA_MOUNTED_MINT_1946-1975_VOL-1",
-        "output_path": "AL-116_INDIA_MOUNTED_MINT_1946-1975_VOL-1\\output",
-        "cover": "IMAGE1.jpg",
+        "continent": "ASIA",
+        "pages": 52,
+        "output_path": "albums/AL-116_INDIA_MOUNTED_MINT_1946-1975_VOL-1/output",
         "images": [
             "IMAGE1.jpg",
             "IMAGE10.jpg",
@@ -62,8 +63,9 @@
     {
         "name": "AL-117_INDIA_MOUNTED_MINT_1976-1989_VOL-2",
         "folder": "AL-117_INDIA_MOUNTED_MINT_1976-1989_VOL-2",
-        "output_path": "AL-117_INDIA_MOUNTED_MINT_1976-1989_VOL-2\\output",
-        "cover": "IMAGE1.jpg",
+        "continent": "ASIA",
+        "pages": 61,
+        "output_path": "albums/AL-117_INDIA_MOUNTED_MINT_1976-1989_VOL-2/output",
         "images": [
             "IMAGE1.jpg",
             "IMAGE10.jpg",
@@ -131,8 +133,9 @@
     {
         "name": "AL-118-INDIA_MOUNTED_MINT_1990-2000_VOL-3",
         "folder": "AL-118-INDIA_MOUNTED_MINT_1990-2000_VOL-3",
-        "output_path": "AL-118-INDIA_MOUNTED_MINT_1990-2000_VOL-3\\output",
-        "cover": "IMAGE1.jpg",
+        "continent": "ASIA",
+        "pages": 38,
+        "output_path": "albums/AL-118-INDIA_MOUNTED_MINT_1990-2000_VOL-3/output",
         "images": [
             "IMAGE1.jpg",
             "IMAGE10.jpg",
@@ -177,8 +180,9 @@
     {
         "name": "AL-119_INDIA_MOUNTED_MINT_2001-2010_VOL-4",
         "folder": "AL-119_INDIA_MOUNTED_MINT_2001-2010_VOL-4",
-        "output_path": "AL-119_INDIA_MOUNTED_MINT_2001-2010_VOL-4\\output",
-        "cover": "IMAGE1.jpg",
+        "continent": "ASIA",
+        "pages": 38,
+        "output_path": "albums/AL-119_INDIA_MOUNTED_MINT_2001-2010_VOL-4/output",
         "images": [
             "IMAGE1.jpg",
             "IMAGE10.jpg",
@@ -223,8 +227,9 @@
     {
         "name": "AL-120_INDIA_MOUNTED_MINT_2011-2018_VOL-5",
         "folder": "AL-120_INDIA_MOUNTED_MINT_2011-2018_VOL-5",
-        "output_path": "AL-120_INDIA_MOUNTED_MINT_2011-2018_VOL-5\\output",
-        "cover": "IMAGE1.jpg",
+        "continent": "ASIA",
+        "pages": 41,
+        "output_path": "albums/AL-120_INDIA_MOUNTED_MINT_2011-2018_VOL-5/output",
         "images": [
             "IMAGE1.jpg",
             "IMAGE10.jpg",
@@ -272,8 +277,9 @@
     {
         "name": "AL-121_INDIA_MOUNTED_MINT_2019-2024_VOL-6",
         "folder": "AL-121_INDIA_MOUNTED_MINT_2019-2024_VOL-6",
-        "output_path": "AL-121_INDIA_MOUNTED_MINT_2019-2024_VOL-6\\output",
-        "cover": "IMAGE1.jpg",
+        "continent": "ASIA",
+        "pages": 29,
+        "output_path": "albums/AL-121_INDIA_MOUNTED_MINT_2019-2024_VOL-6/output",
         "images": [
             "IMAGE1.jpg",
             "IMAGE10.jpg",
