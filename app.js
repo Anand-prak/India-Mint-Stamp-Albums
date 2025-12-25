@@ -1,4 +1,4 @@
-console.log("APP.JS VERSION 2025-12-25 CONTINENT FIXED");
+console.log("APP.JS VERSION 2025-12-25 DISPLAY NAME FIXED");
 
 fetch('albums.json')
   .then(response => response.json())
@@ -11,7 +11,8 @@ fetch('albums.json')
       card.className = 'album-card';
 
       card.innerHTML = `
-        <h3>${album.name}</h3>
+        <h3>ID: ${album.name}</h3>
+        <p><strong>Album:</strong> ${album.display_name}</p>
         <p><strong>Continent:</strong> ${album.continent}</p>
         <p><strong>Pages:</strong> ${album.pages}</p>
       `;
@@ -35,7 +36,7 @@ function loadAlbum() {
       const album = albums.find(a => a.name === albumId);
       if (!album) return;
 
-      document.getElementById('album-title').innerText = album.name;
+      document.getElementById('album-title').innerText = `${album.name} - ${album.display_name}`;
       const imgContainer = document.getElementById('images-container');
 
       // Optional: sort images numerically
